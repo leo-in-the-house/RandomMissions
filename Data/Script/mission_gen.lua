@@ -2709,7 +2709,8 @@ function MISSION_GEN.GenerateBoard(result, board_type)
 
 		local floor_candidates_length = #floor_candidates
 		local current_index = 0
-		local noMissionFloors = current_segment:GetNoMissionFloors()
+		local noMissionFloors = {} --TODO: touhou - remove this and uncomment next line in next version
+		--local noMissionFloors = current_segment:GetNoMissionFloors()
 		local valid_floor_candidates = {}
 		 
 		--Make sure that the dungeon floor added is valid

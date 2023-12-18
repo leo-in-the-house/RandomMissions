@@ -1956,15 +1956,16 @@ end
 
 function base_camp_2.RewardEXP(job)
     --Reward EXP for your party
-    local exp_reward = MISSION_GEN.GetJobExpReward(job.Difficulty)
-    local exp_reward_string = "[color=#00FFFF]"..exp_reward.."[color]"
+    --local exp_reward = MISSION_GEN.GetJobExpReward(job.Difficulty)
+    --local exp_reward_string = "[color=#00FFFF]"..exp_reward.."[color]"
     UI:ResetSpeaker()
-    UI:WaitShowDialogue(STRINGS:Format(MapStrings['Mission_Handout_EXP'], exp_reward_string))
-    PrintInfo("Rewarding EXP for job with difficulty "..job.Difficulty.." and reward "..exp_reward_string)
-    local player_count = _DATA.Save.ActiveTeam.Players.Count
-    for player_idx = 0, player_count-1, 1 do
-        TASK:WaitTask(GROUND:_HandoutEXP(_DATA.Save.ActiveTeam.Players[player_idx], exp_reward))
-    end
+    UI:WaitShowDialogue("EXP rewards are not supported in this version of Random Missions.")--TODO: touhou- uncomment these methods and remove this line
+    --UI:WaitShowDialogue(STRINGS:Format(MapStrings['Mission_Handout_EXP'], exp_reward_string))
+    --PrintInfo("Rewarding EXP for job with difficulty "..job.Difficulty.." and reward "..exp_reward_string)
+    --local player_count = _DATA.Save.ActiveTeam.Players.Count
+    --for player_idx = 0, player_count-1, 1 do
+    --    TASK:WaitTask(GROUND:_HandoutEXP(_DATA.Save.ActiveTeam.Players[player_idx], exp_reward))
+    --end
 end
 
 return base_camp_2
