@@ -2716,7 +2716,7 @@ function MISSION_GEN.GenerateBoard(result, board_type)
 		--Make sure that the dungeon floor added is valid
 		for i = 1, floor_candidates_length, 1 do
 			local cur_candidate = floor_candidates[i]
-			if noMissionFloors:Contains(cur_candidate) == false then
+			--if noMissionFloors:Contains(cur_candidate) == false then --TODO: touhou - uncomment this line in next version
 				local has_sidequest_on_floor = false
 				
 				--Make sure none of the sidequests (EscortSister, OutlawForest) take place in the same floor
@@ -2730,7 +2730,7 @@ function MISSION_GEN.GenerateBoard(result, board_type)
 				if has_sidequest_on_floor == false then
 					table.insert(valid_floor_candidates, cur_candidate)
 				end
-			end
+			--end --TODO: touhou - uncomment this line in next version
 		end
 
 		local mission_floor = -1
