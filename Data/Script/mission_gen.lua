@@ -1729,60 +1729,61 @@ MISSION_GEN.SPECIAL_CLIENT_OPTIONS = {
 --Order matters for these! First is the client, second is the target
 --Titles are random from a small list. Each pair has a unique body text however included in the data below.
 --Number represents that mon's gender, 1 for male, 2 for female, 0 for genderless
+--Each mon is written in an order of species, gender, form, shiny
 MISSION_GEN.SPECIAL_LOVER_PAIRS = {
 	TIER_LOW = {
-		{'volbeat', 1, 'illumise', 2, "MISSION_BODY_SPECIAL_LOVER_001"},
-		{'minun', 1, 'plusle', 2, "MISSION_BODY_SPECIAL_LOVER_002"},
-		{'mareep', 2, 'wooloo', 1, "MISSION_BODY_SPECIAL_LOVER_003"},
-		{'luvdisc', 2, 'luvdisc', 2, "MISSION_BODY_SPECIAL_LOVER_004"}	
+		{{'volbeat', 1, 0, false}, {'illumise', 2, 0, false}, "MISSION_BODY_SPECIAL_LOVER_001"},
+		{{'minun', 1, 0, false}, {'plusle', 2, 0, false}, "MISSION_BODY_SPECIAL_LOVER_002"},
+		{{'mareep', 2, 0, false}, {'wooloo', 1, 0, false}, "MISSION_BODY_SPECIAL_LOVER_003"},
+		{{'luvdisc', 2, 0, false}, {'luvdisc', 2, 0, false}, "MISSION_BODY_SPECIAL_LOVER_004"},
 	},
 	TIER_MID = {
-		{'miltank', 2, 'tauros', 1, "MISSION_BODY_SPECIAL_LOVER_005"},
-		{'venomoth', 1, 'butterfree', 2, "MISSION_BODY_SPECIAL_LOVER_006"},
-		{'liepard', 2, 'persian', 1, "MISSION_BODY_SPECIAL_LOVER_007"},
-		{'dustox', 1, 'beautifly', 2, "MISSION_BODY_SPECIAL_LOVER_008"},
-		{'glalie', 1, 'froslass', 2, "MISSION_BODY_SPECIAL_LOVER_009"},
-		{'ribombee', 2, 'masquerain', 1, "MISSION_BODY_SPECIAL_LOVER_010"},
-		{'maractus', 2, 'cacturne', 1, "MISSION_BODY_SPECIAL_LOVER_011"},---my prickly love!
-		{'lanturn', 1, 'lumineon', 2, "MISSION_BODY_SPECIAL_LOVER_012"}
+		{{'miltank', 2, 0, false}, {'tauros', 1, 0, false}, "MISSION_BODY_SPECIAL_LOVER_005"},
+		{{'venomoth', 1, 0, false}, {'butterfree', 2, 0, false}, "MISSION_BODY_SPECIAL_LOVER_006"},
+		{{'liepard', 2, 0, false}, {'persian', 1, 0, false}, "MISSION_BODY_SPECIAL_LOVER_007"},
+		{{'dustox', 1, 0, false}, {'beautifly', 2, 0, false}, "MISSION_BODY_SPECIAL_LOVER_008"},
+		{{'glalie', 1, 0, false}, {'froslass', 2, 0, false}, "MISSION_BODY_SPECIAL_LOVER_009"},
+		{{'ribombee', 2, 0, false}, {'masquerain', 1, 0, false}, "MISSION_BODY_SPECIAL_LOVER_010"},
+		{{'maractus', 2, 0, false}, {'cacturne', 1, 0, false}, "MISSION_BODY_SPECIAL_LOVER_011"},---my prickly love!
+		{{'lanturn', 1, 0, false}, {'lumineon', 2, 0, false}, "MISSION_BODY_SPECIAL_LOVER_012"},
 	},
 	TIER_HIGH = {
-		{'tyranitar', 1, 'altaria', 2, "MISSION_BODY_SPECIAL_LOVER_013"},--reference to an old idea i had
-		{'gyarados', 1, 'milotic', 2, "MISSION_BODY_SPECIAL_LOVER_014"},
-		{'gardevoir', 2, 'gallade', 1, "MISSION_BODY_SPECIAL_LOVER_015"}
+		{{'tyranitar', 1, 0, false}, {'altaria', 2, 0, false}, "MISSION_BODY_SPECIAL_LOVER_013"},--reference to an old idea i had
+		{{'gyarados', 1, 0, false}, {'milotic', 2, 0, false}, "MISSION_BODY_SPECIAL_LOVER_014"},
+		{{'gardevoir', 2, 0, false}, {'gallade', 1, 0, false}, "MISSION_BODY_SPECIAL_LOVER_015"}
 	}
 
 }
 
 MISSION_GEN.SPECIAL_CHILD_PAIRS = {
 	TIER_LOW = {
-		{'clefable', 2, 'cleffa', 2, "MISSION_BODY_SPECIAL_CHILD_001"},
-		{'wigglytuff', 1, 'igglybuff', 1, "MISSION_BODY_SPECIAL_CHILD_002"},
-		{'togekiss', 2, 'togepi', 1, "MISSION_BODY_SPECIAL_CHILD_003"},
-		{'roserade', 2, 'budew', 2, "MISSION_BODY_SPECIAL_CHILD_004"},
-		{'chimecho', 2, 'chingling', 1, "MISSION_BODY_SPECIAL_CHILD_005"},
-		{'sudowoodo', 1, 'bonsly', 1, "MISSION_BODY_SPECIAL_CHILD_006"},
-		{'mr_mime', 1, 'mime_jr', 1, "MISSION_BODY_SPECIAL_CHILD_007"},
-		{'raticate', 1, 'rattata', 2, "MISSION_BODY_SPECIAL_CHILD_008"},--hes still not so good at gnawing!
-		{'leavanny', 2, 'sewaddle', 2, "MISSION_BODY_SPECIAL_CHILD_009"}
+		{{'clefable', 2, 0, false}, {'cleffa', 2, 0, false}, "MISSION_BODY_SPECIAL_CHILD_001"},
+		{{'wigglytuff', 1, 0, false}, {'igglybuff', 1, 0, false}, "MISSION_BODY_SPECIAL_CHILD_002"},
+		{{'togekiss', 2, 0, false}, {'togepi', 1, 0, false}, "MISSION_BODY_SPECIAL_CHILD_003"},
+		{{'roserade', 2, 0, false}, {'budew', 2, 0, false}, "MISSION_BODY_SPECIAL_CHILD_004"},
+		{{'chimecho', 2, 0, false}, {'chingling', 1, 0, false}, "MISSION_BODY_SPECIAL_CHILD_005"},
+		{{'sudowoodo', 1, 0, false}, {'bonsly', 1, 0, false}, "MISSION_BODY_SPECIAL_CHILD_006"},
+		{{'mr_mime', 1, 0, false}, {'mime_jr', 1, 0, false}, "MISSION_BODY_SPECIAL_CHILD_007"},
+		{{'raticate', 1, 0, false}, {'rattata', 2, 0, false}, "MISSION_BODY_SPECIAL_CHILD_008"},--hes still not so good at gnawing!
+		{{'leavanny', 2, 0, false}, {'sewaddle', 2, 0, false}, "MISSION_BODY_SPECIAL_CHILD_009"}
 	},
 	TIER_MID = {
-		{'appletun', 2, 'applin', 1, "MISSION_BODY_SPECIAL_CHILD_010"},
-		{'aggron', 1, 'aron', 1, "MISSION_BODY_SPECIAL_CHILD_011"},--probably munched too much metal!
-		{'jynx', 2, 'smoochum', 2, "MISSION_BODY_SPECIAL_CHILD_012"},
-		{'magmortar', 2, 'magby', 2, "MISSION_BODY_SPECIAL_CHILD_013"},
-		{'electivire', 1, 'elekid', 1, "MISSION_BODY_SPECIAL_CHILD_014"},
-		{'tsareena', 2, 'bounsweet', 2, "MISSION_BODY_SPECIAL_CHILD_015"},
-		{'hatterene', 2, 'hatenna', 2, "MISSION_BODY_SPECIAL_CHILD_016"},
-		{'gothitelle', 2, 'gothita', 2, "MISSION_BODY_SPECIAL_CHILD_017"},
-		{'dugtrio', 1, 'diglett', 1, "MISSION_BODY_SPECIAL_CHILD_018"}
+		{{'appletun', 2, 0, false}, {'applin', 1, 0, false}, "MISSION_BODY_SPECIAL_CHILD_010"},
+		{{'aggron', 1, 0, false}, {'aron', 1, 0, false}, "MISSION_BODY_SPECIAL_CHILD_011"},--probably munched too much metal!
+		{{'jynx', 2, 0, false}, {'smoochum', 2, 0, false}, "MISSION_BODY_SPECIAL_CHILD_012"},
+		{{'magmortar', 2, 0, false}, {'magby', 2, 0, false}, "MISSION_BODY_SPECIAL_CHILD_013"},
+		{{'electivire', 1, 0, false}, {'elekid', 1, 0, false}, "MISSION_BODY_SPECIAL_CHILD_014"},
+		{{'tsareena', 2, 0, false}, {'bounsweet', 2, 0, false}, "MISSION_BODY_SPECIAL_CHILD_015"},
+		{{'hatterene', 2, 0, false}, {'hatenna', 2, 0, false}, "MISSION_BODY_SPECIAL_CHILD_016"},
+		{{'gothitelle', 2, 0, false}, {'gothita', 2, 0, false}, "MISSION_BODY_SPECIAL_CHILD_017"},
+		{{'dugtrio', 1, 0, false}, {'diglett', 1, 0, false}, "MISSION_BODY_SPECIAL_CHILD_018"}
 	},	
 	TIER_HIGH = {
-		{'tyranitar', 2, 'larvitar', 1, "MISSION_BODY_SPECIAL_CHILD_019"},
-		{'salamence', 1, 'bagon', 2, "MISSION_BODY_SPECIAL_CHILD_020"},
-		{'dragonite', 2, 'dratini', 2, "MISSION_BODY_SPECIAL_CHILD_021"},
-		{'noivern', 1, 'noibat', 1, "MISSION_BODY_SPECIAL_CHILD_022"},
-		{'goodra', 2, 'goomy', 1, "MISSION_BODY_SPECIAL_CHILD_023"}
+		{{'tyranitar', 2, 0, false}, {'larvitar', 1, 0, false}, "MISSION_BODY_SPECIAL_CHILD_019"},
+		{{'salamence', 2, 0, false}, {'bagon', 2, 0, false}, "MISSION_BODY_SPECIAL_CHILD_020"},
+		{{'dragonite', 2, 0, false}, {'dratini', 2, 0, false}, "MISSION_BODY_SPECIAL_CHILD_021"},
+		{{'noivern', 1, 0, false}, {'noibat', 1, 0, false}, "MISSION_BODY_SPECIAL_CHILD_022"},
+		{{'goodra', 2, 0, false}, {'goomy', 1, 0, false}, "MISSION_BODY_SPECIAL_CHILD_023"}
 	}
 	
 	
@@ -1792,63 +1793,63 @@ MISSION_GEN.SPECIAL_CHILD_PAIRS = {
 
 MISSION_GEN.SPECIAL_FRIEND_PAIRS = {
 	TIER_LOW = {
-		{'applin', 1, 'cherubi', 2, "MISSION_BODY_SPECIAL_FRIEND_001"},--We both get mistaken for fruit! What if someone ate him!?
-		{'mantyke', 2, 'remoraid', 1, "MISSION_BODY_SPECIAL_FRIEND_002"},--My best friend is missing! I'll never be able to evolve without him!
-		{'magikarp', 1, 'feebas', 2, "MISSION_BODY_SPECIAL_FRIEND_003"},--feebas is the only one who understands what it's like to be dogshit!
-		{'poliwag', 2, 'lotad', 1, "MISSION_BODY_SPECIAL_FRIEND_004"},--frog and his lilypad. I have no lilypad now, save him!
-		{'teddiursa', 1, 'combee', 2, "MISSION_BODY_SPECIAL_FRIEND_005"}, --Without Combee, I have no honey! Please find them!
-		{'woobat', 2, 'zubat', 1, "MISSION_BODY_SPECIAL_FRIEND_006"},--we both use ultrasonic waves to see!
-		{'trubbish', 1, 'grimer', 1, "MISSION_BODY_SPECIAL_FRIEND_007"},--we both love eating garbage!
-		{'shroomish', 1, 'paras', 1, "MISSION_BODY_SPECIAL_FRIEND_008"},--we both love to spread spores!
-		{'chansey', 2, 'togepi', 2, "MISSION_BODY_SPECIAL_FRIEND_009"},--cares for togepi because its an egg
-		{'salandit', 1, 'combee', 1, "MISSION_BODY_SPECIAL_FRIEND_010"}--they relate in being useless
+		{{'applin', 1, 0, false}, {'cherubi', 2, 0, false}, "MISSION_BODY_SPECIAL_FRIEND_001"},--We both get mistaken for fruit! What if someone ate him!?
+		{{'mantyke', 2, 0, false}, {'remoraid', 1, 0, false}, "MISSION_BODY_SPECIAL_FRIEND_002"},--My best friend is missing! I'll never be able to evolve without him!
+		{{'magikarp', 1, 0, false}, {'feebas', 2, 0, false}, "MISSION_BODY_SPECIAL_FRIEND_003"},--feebas is the only one who understands what it's like to be dogshit!
+		{{'poliwag', 2, 0, false}, {'lotad', 1, 0, false}, "MISSION_BODY_SPECIAL_FRIEND_004"},--frog and his lilypad. I have no lilypad now, save him!
+		{{'teddiursa', 1, 0, false}, {'combee', 2, 0, false}, "MISSION_BODY_SPECIAL_FRIEND_005"}, --Without Combee, I have no honey! Please find them!
+		{{'woobat', 2, 0, false}, {'zubat', 1, 0, false}, "MISSION_BODY_SPECIAL_FRIEND_006"},--we both use ultrasonic waves to see!
+		{{'trubbish', 1, 0, false}, {'grimer', 1, 0, false}, "MISSION_BODY_SPECIAL_FRIEND_007"},--we both love eating garbage!
+		{{'shroomish', 1, 0, false}, {'paras', 1, 0, false}, "MISSION_BODY_SPECIAL_FRIEND_008"},--we both love to spread spores!
+		{{'chansey', 2, 0, false}, {'togepi', 2, 0, false}, "MISSION_BODY_SPECIAL_FRIEND_009"},--cares for togepi because its an egg
+		{{'salandit', 1, 0, false}, {'combee', 1, 0, false}, "MISSION_BODY_SPECIAL_FRIEND_010"}--they relate in being useless
 	},
 	TIER_MID = {
-		{'lunatone', 0, 'solrock', 0, "MISSION_BODY_SPECIAL_FRIEND_011"},
-		{'emolga', 2, 'pachirisu', 2, "MISSION_BODY_SPECIAL_FRIEND_012"},
-		{'spinda', 2, 'hypno', 1, "MISSION_BODY_SPECIAL_FRIEND_013"}, --Hypno went missing; only he can help stop my dizziness
-		{'cramorant', 1, 'pelipper', 2, "MISSION_BODY_SPECIAL_FRIEND_014"},
-		{'magnemite', 0, 'nosepass', 1, "MISSION_BODY_SPECIAL_FRIEND_015"},--We're both sensitive to magnetism!
-		{'dustox', 1, 'lampent', 2, "MISSION_BODY_SPECIAL_FRIEND_016"}
+		{{'lunatone', 0, 0, false}, {'solrock', 0, 0, false}, "MISSION_BODY_SPECIAL_FRIEND_011"},
+		{{'emolga', 2, 0, false}, {'pachirisu', 2, 0, false}, "MISSION_BODY_SPECIAL_FRIEND_012"},
+		{{'spinda', 2, 0, false}, {'hypno', 1, 0, false}, "MISSION_BODY_SPECIAL_FRIEND_013"}, --Hypno went missing; only he can help stop my dizziness
+		{{'cramorant', 1, 0, false}, {'pelipper', 2, 0, false}, "MISSION_BODY_SPECIAL_FRIEND_014"},
+		{{'magnemite', 0, 0, false}, {'nosepass', 1, 0, false}, "MISSION_BODY_SPECIAL_FRIEND_015"},--We're both sensitive to magnetism!
+		{{'dustox', 1, 0, false}, {'lampent', 2, 0, false}, "MISSION_BODY_SPECIAL_FRIEND_016"}
 	},
 	TIER_HIGH = {
-		{'lilligant', 2, 'kricketune', 1, "MISSION_BODY_SPECIAL_FRIEND_017"},--I can't dance without Kricketune's music!
-		{'wigglytuff', 2, 'exploud', 1, "MISSION_BODY_SPECIAL_FRIEND_018"}, --we love making loud, silly noises together!
-		{'beedrill', 1, 'florges', 2, "MISSION_BODY_SPECIAL_FRIEND_019"},--without my flower, i have no meaning!
-		{'dunsparce', 1, 'dugtrio', 1, "MISSION_BODY_SPECIAL_FRIEND_020"},--we both love to burrow!
-		{'whimsicott', 2, 'jumpluff', 2, "MISSION_BODY_SPECIAL_FRIEND_021"}
+		{{'lilligant', 2, 0, false}, {'kricketune', 1, 0, false}, "MISSION_BODY_SPECIAL_FRIEND_017"},--I can't dance without Kricketune's music!
+		{{'wigglytuff', 2, 0, false}, {'exploud', 1, 0, false}, "MISSION_BODY_SPECIAL_FRIEND_018"}, --we love making loud, silly noises together!
+		{{'beedrill', 1, 0, false}, {'florges', 2, 0, false}, "MISSION_BODY_SPECIAL_FRIEND_019"},--without my flower, i have no meaning!
+		{{'dunsparce', 1, 0, false}, {'dugtrio', 1, 0, false}, "MISSION_BODY_SPECIAL_FRIEND_020"},--we both love to burrow!
+		{{'whimsicott', 2, 0, false}, {'jumpluff', 2, 0, false}, "MISSION_BODY_SPECIAL_FRIEND_021"}
 	}
 }
 
 MISSION_GEN.SPECIAL_RIVAL_PAIRS = {
 	TIER_LOW = {
-		{'koffing', 1, 'stunky', 2, "MISSION_BODY_SPECIAL_RIVAL_001"},--they compete to see whose odor is stronger
-		{'krabby', 1, 'corphish', 1, "MISSION_BODY_SPECIAL_RIVAL_002"},--compare claw strength
-		{'shuppet', 2, 'duskull', 1, "MISSION_BODY_SPECIAL_RIVAL_003"},--we like to see who can pull better pranks!
-		{'pidgey', 2, 'spearow', 2, "MISSION_BODY_SPECIAL_RIVAL_004"},--we compete at flying!
-		{'kabuto', 1, 'omanyte', 1, "MISSION_BODY_SPECIAL_RIVAL_005"}, --we've been rivals since our ancestors' time!
-		{'joltik', 2, 'spinarak', 1, "MISSION_BODY_SPECIAL_RIVAL_006"},--We like to see who can spin the better web!
-		{'tyrogue', 1, 'makuhita', 1, "MISSION_BODY_SPECIAL_RIVAL_007"},--my punching bag training partner!
-		{'lillipup', 2, 'poochyena', 1, "MISSION_BODY_SPECIAL_RIVAL_008"}
+		{{'koffing', 1, 0, false}, {'stunky', 2, 0, false}, "MISSION_BODY_SPECIAL_RIVAL_001"},--they compete to see whose odor is stronger
+		{{'krabby', 1, 0, false}, {'corphish', 1, 0, false}, "MISSION_BODY_SPECIAL_RIVAL_002"},--compare claw strength
+		{{'shuppet', 2, 0, false}, {'duskull', 1, 0, false}, "MISSION_BODY_SPECIAL_RIVAL_003"},--we like to see who can pull better pranks!
+		{{'pidgey', 2, 0, false}, {'spearow', 2, 0, false}, "MISSION_BODY_SPECIAL_RIVAL_004"},--we compete at flying!
+		{{'kabuto', 1, 0, false}, {'omanyte', 1, 0, false}, "MISSION_BODY_SPECIAL_RIVAL_005"}, --we've been rivals since our ancestors' time!
+		{{'joltik', 2, 0, false}, {'spinarak', 1, 0, false}, "MISSION_BODY_SPECIAL_RIVAL_006"},--We like to see who can spin the better web!
+		{{'tyrogue', 1, 0, false}, {'makuhita', 1, 0, false}, "MISSION_BODY_SPECIAL_RIVAL_007"},--my punching bag training partner!
+		{{'lillipup', 2, 0, false}, {'poochyena', 1, 0, false}, "MISSION_BODY_SPECIAL_RIVAL_008"}
 
 },
 	
 	TIER_MID = {
-		{'vigoroth', 1, 'primeape', 1, "MISSION_BODY_SPECIAL_RIVAL_009"},--full of energy!
-		{'sawsbuck', 1, 'stantler', 1, "MISSION_BODY_SPECIAL_RIVAL_010"},--butt antlers!
-		{'jangmo_o', 1, 'axew', 1, "MISSION_BODY_SPECIAL_RIVAL_011"},
-		{'mareanie', 2, 'corsola', 2, "MISSION_BODY_SPECIAL_RIVAL_012"}
+		{{'vigoroth', 1, 0, false}, {'primeape', 1, 0, false}, "MISSION_BODY_SPECIAL_RIVAL_009"},--full of energy!
+		{{'sawsbuck', 1, 0, false}, {'stantler', 1, 0, false}, "MISSION_BODY_SPECIAL_RIVAL_010"},--butt antlers!
+		{{'jangmo_o', 1, 0, false}, {'axew', 1, 0, false}, "MISSION_BODY_SPECIAL_RIVAL_011"},
+		{{'mareanie', 2, 0, false}, {'corsola', 2, 0, false}, "MISSION_BODY_SPECIAL_RIVAL_012"}
 
 	},
 	
 	TIER_HIGH = {
-		{'heracross', 1, 'pinsir', 1, "MISSION_BODY_SPECIAL_RIVAL_013"},
-		{'slowking', 1, 'slowbro', 1, "MISSION_BODY_SPECIAL_RIVAL_014"},--slowbro may not be as smart as me, but we're still great friends!
-		{'magmortar', 2, 'electivire', 1, "MISSION_BODY_SPECIAL_RIVAL_015"}, --we need to settle who is stronger!
-		{'cradily', 2, 'armaldo', 1, "MISSION_BODY_SPECIAL_RIVAL_016"}, --we've been rivals since our ancestors' time!
-		{'bastiodon', 2, 'rampardos', 1, "MISSION_BODY_SPECIAL_RIVAL_017"}, --we've been rivals since our ancestors' time!
-		{'archeops', 1, 'aerodactyl', 2, "MISSION_BODY_SPECIAL_RIVAL_018"}, --we've been rivals since our ancestors' time!
-		{'swellow', 2, 'staraptor', 1, "MISSION_BODY_SPECIAL_RIVAL_019"}--brave birds!
+		{{'heracross', 1, 0, false}, {'pinsir', 1, 0, false}, "MISSION_BODY_SPECIAL_RIVAL_013"},
+		{{'slowking', 1, 0, false}, {'slowbro', 1, 0, false}, "MISSION_BODY_SPECIAL_RIVAL_014"},--slowbro may not be as smart as me, but we're still great friends!
+		{{'magmortar', 2, 0, false}, {'electivire', 1, 0, false}, "MISSION_BODY_SPECIAL_RIVAL_015"}, --we need to settle who is stronger!
+		{{'cradily', 2, 0, false}, {'armaldo', 1, 0, false}, "MISSION_BODY_SPECIAL_RIVAL_016"}, --we've been rivals since our ancestors' time!
+		{{'bastiodon', 2, 0, false}, {'rampardos', 1, 0, false}, "MISSION_BODY_SPECIAL_RIVAL_017"}, --we've been rivals since our ancestors' time!
+		{{'archeops', 1, 0, false}, {'aerodactyl', 2, 0, false}, "MISSION_BODY_SPECIAL_RIVAL_018"}, --we've been rivals since our ancestors' time!
+		{{'swellow', 2, 0, false}, {'staraptor', 1, 0, false}, "MISSION_BODY_SPECIAL_RIVAL_019"}--brave birds!
 
 	}
 }
@@ -2559,15 +2560,21 @@ function MISSION_GEN.GenerateBoard(result, board_type)
 
 			--Set variables with special client/target info
 			local special_choice = special_candidates[math.random(1, #special_candidates)]
-			client = special_choice[1]
-			client_gender = special_choice[2]
-			target = special_choice[3]
-			target_gender = special_choice[4]
+			local client_object = special_choice[1]
+			local target_object = special_choice[2]
+			client = client_object[1]
+			client_gender = client_object[2]
+			local client_form = client_object[3]
+			local client_shiny = client_object[4]
+			target = target_object[1]
+			target_gender = target_object[2]
+			local target_form = target_object[3]
+			local target_shiny = target_object[4]
 
 			local special_title_candidates = MISSION_GEN.TITLES[special]
 			title = RogueEssence.StringKey(special_title_candidates[math.random(1, #special_title_candidates)]):ToLocal()
 
-			flavor = RogueEssence.StringKey(special_choice[5]):ToLocal()
+			flavor = RogueEssence.StringKey(special_choice[3]):ToLocal()
 
 
 		end
@@ -2769,7 +2776,25 @@ function MISSION_GEN.GenerateBoard(result, board_type)
 				SV.OutlawBoard[i].Item = item
 				SV.OutlawBoard[i].Special = special
 				SV.OutlawBoard[i].ClientGender = client_gender
+
+				if client_form ~= 0 then
+					SV.OutlawBoard[i].ClientForm = client_form
+				end
+
+				if client_shiny == true then
+					SV.OutlawBoard[i].ClientShiny = 1
+				end
+				
 				SV.OutlawBoard[i].TargetGender = target_gender
+
+				if target_form ~= 0 then
+					SV.OutlawBoard[i].TargetForm = target_form
+				end
+
+				if target_shiny == true then
+					SV.OutlawBoard[i].TargetShiny = 1
+				end
+				
 				SV.OutlawBoard[i].BonusReward = bonus_reward
 			else
 				PrintInfo("Creating new mission for index "..i.." with client "..client.." difficulty "..difficulty.." title "..title.." and dungeon "..dungeon.." and segment "..segment.." and floor "..mission_floor)
@@ -2788,7 +2813,25 @@ function MISSION_GEN.GenerateBoard(result, board_type)
 				SV.MissionBoard[i].Item = item
 				SV.MissionBoard[i].Special = special		
 				SV.MissionBoard[i].ClientGender = client_gender
+
+				if client_form ~= 0 then
+					SV.MissionBoard[i].ClientForm = client_form
+				end
+
+				if client_shiny == true then
+					SV.MissionBoard[i].ClientShiny = 1
+				end
+				
 				SV.MissionBoard[i].TargetGender = target_gender
+
+				if target_form ~= 0 then
+					SV.MissionBoard[i].TargetForm = target_form
+				end
+
+				if target_shiny == true then
+					SV.MissionBoard[i].TargetShiny = 1
+				end
+				
 				SV.MissionBoard[i].BonusReward = bonus_reward
 			end
 		end
