@@ -2542,6 +2542,11 @@ function MISSION_GEN.GenerateBoard(result, board_type)
 
 		target_gender = COMMON.GenderToNum(target_gender)
 
+		local client_form = 0
+		local client_shiny = false
+		local target_form = 0
+		local target_shiny = false
+
 		--Special cases
 		--Roll for the main 3 rescue special cases 
 		if objective == COMMON.MISSION_TYPE_RESCUE and math.random(1, 10) <= 2 then
@@ -2564,12 +2569,12 @@ function MISSION_GEN.GenerateBoard(result, board_type)
 			local target_object = special_choice[2]
 			client = client_object[1]
 			client_gender = client_object[2]
-			local client_form = client_object[3]
-			local client_shiny = client_object[4]
+			client_form = client_object[3]
+			client_shiny = client_object[4]
 			target = target_object[1]
 			target_gender = target_object[2]
-			local target_form = target_object[3]
-			local target_shiny = target_object[4]
+			target_form = target_object[3]
+			target_shiny = target_object[4]
 
 			local special_title_candidates = MISSION_GEN.TITLES[special]
 			title = RogueEssence.StringKey(special_title_candidates[math.random(1, #special_title_candidates)]):ToLocal()
@@ -2776,25 +2781,11 @@ function MISSION_GEN.GenerateBoard(result, board_type)
 				SV.OutlawBoard[i].Item = item
 				SV.OutlawBoard[i].Special = special
 				SV.OutlawBoard[i].ClientGender = client_gender
-
-				if client_form ~= 0 then
-					SV.OutlawBoard[i].ClientForm = client_form
-				end
-
-				if client_shiny == true then
-					SV.OutlawBoard[i].ClientShiny = 1
-				end
-				
+				SV.OutlawBoard[i].ClientForm = client_form
+				SV.OutlawBoard[i].ClientShiny = 1
 				SV.OutlawBoard[i].TargetGender = target_gender
-
-				if target_form ~= 0 then
-					SV.OutlawBoard[i].TargetForm = target_form
-				end
-
-				if target_shiny == true then
-					SV.OutlawBoard[i].TargetShiny = 1
-				end
-				
+				SV.OutlawBoard[i].TargetForm = target_form
+				SV.OutlawBoard[i].TargetShiny = 1
 				SV.OutlawBoard[i].BonusReward = bonus_reward
 			else
 				PrintInfo("Creating new mission for index "..i.." with client "..client.." difficulty "..difficulty.." title "..title.." and dungeon "..dungeon.." and segment "..segment.." and floor "..mission_floor)
@@ -2813,25 +2804,11 @@ function MISSION_GEN.GenerateBoard(result, board_type)
 				SV.MissionBoard[i].Item = item
 				SV.MissionBoard[i].Special = special		
 				SV.MissionBoard[i].ClientGender = client_gender
-
-				if client_form ~= 0 then
-					SV.MissionBoard[i].ClientForm = client_form
-				end
-
-				if client_shiny == true then
-					SV.MissionBoard[i].ClientShiny = 1
-				end
-				
+				SV.MissionBoard[i].ClientForm = client_form
+				SV.MissionBoard[i].ClientShiny = 1
 				SV.MissionBoard[i].TargetGender = target_gender
-
-				if target_form ~= 0 then
-					SV.MissionBoard[i].TargetForm = target_form
-				end
-
-				if target_shiny == true then
-					SV.MissionBoard[i].TargetShiny = 1
-				end
-				
+				SV.MissionBoard[i].TargetForm = target_form
+				SV.MissionBoard[i].TargetShiny = 1
 				SV.MissionBoard[i].BonusReward = bonus_reward
 			end
 		end

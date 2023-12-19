@@ -1766,7 +1766,12 @@ function base_camp_2.Outlaw_Job_Clear(job)
         client_gender = COMMON.NumToGender(client_gender)
         client_gender = client_gender
 
-        local client_monster = RogueEssence.Dungeon.MonsterID(job.Client, 0, "normal", client_gender)
+        local client_shiny = "normal"
+        if job.ClientShiny == true then
+            client_shiny = "shiny"
+        end
+        
+        local client_monster = RogueEssence.Dungeon.MonsterID(job.Client, job.ClientForm, client_shiny, client_gender)
 
         local client = RogueEssence.Ground.GroundChar(client_monster, RogueElements.Loc(100, 575), Direction.Down, job.Client:gsub("^%l", string.upper), client_monster.Species)
         client:ReloadEvents()
@@ -1829,7 +1834,12 @@ function base_camp_2.Mission_Job_Clear(job)
         local client_gender = job.ClientGender
         client_gender = COMMON.NumToGender(client_gender)
 
-        local client_monster = RogueEssence.Dungeon.MonsterID(job.Client, 0, "normal", client_gender)
+        local client_shiny = "normal"
+        if job.ClientShiny == true then
+            client_shiny = "shiny"
+        end
+
+        local client_monster = RogueEssence.Dungeon.MonsterID(job.Client, job.ClientForm, client_shiny, client_gender)
         local client = RogueEssence.Ground.GroundChar(client_monster, RogueElements.Loc(100, 575), Direction.Down, job.Client:gsub("^%l", string.upper), client_monster.Species)
         client:ReloadEvents()
         GAME:GetCurrentGround():AddTempChar(client)
@@ -1886,8 +1896,12 @@ function base_camp_2.Mission_Job_Clear(job)
         local client_gender = job.ClientGender
         client_gender = COMMON.NumToGender(client_gender)
 
+        local client_shiny = "normal"
+        if job.ClientShiny == true then
+            client_shiny = "shiny"
+        end
 
-        local client_monster = RogueEssence.Dungeon.MonsterID(job.Client, 0, "normal", client_gender)
+        local client_monster = RogueEssence.Dungeon.MonsterID(job.Client, job.ClientForm, client_shiny, client_gender)
 
         local client = RogueEssence.Ground.GroundChar(client_monster, RogueElements.Loc(80, 575), Direction.Down, job.Client:gsub("^%l", string.upper), client_monster.Species)
         client:ReloadEvents()

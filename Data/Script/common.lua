@@ -1079,7 +1079,11 @@ function COMMON.EnterDungeonMissionCheck(zoneId, segmentID)
                 --Set max team size to 3 as the guest is "taking" up a party slot
                 RogueEssence.Dungeon.ExplorerTeam.MAX_TEAM_SLOTS = 3
 
-                local mon_id = RogueEssence.Dungeon.MonsterID(mission.Client, 0, "normal", COMMON.NumToGender(mission.ClientGender))
+                local client_shiny = "normal"
+                if mission.ClientShiny == true then
+                    client_shiny = "shiny"
+                end
+                local mon_id = RogueEssence.Dungeon.MonsterID(mission.Client, mission.ClientForm, client_shiny, COMMON.NumToGender(mission.ClientGender))
                 -- set the escort level 20% less than the expected level
                 local level = math.floor(SV.ExpectedLevel[mission.Zone] * 0.80)
                 local new_mob = _DATA.Save.ActiveTeam:CreatePlayer(_DATA.Save.Rand, mon_id, level, "", -1)
